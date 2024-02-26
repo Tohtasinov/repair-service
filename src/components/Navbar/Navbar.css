@@ -1,0 +1,33 @@
+.css-12fn69u-MuiButtonBase-root-MuiButton-root {
+  border-radius: 0;
+}
+
+#container {
+  background: url(https://alltechappliance.com/wp-content/uploads/2019/02/Washing-Machine-being-Repaired-in-Portland-880x350.jpeg)
+    no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  margin-top: 0px;
+  color: white;
+  z-index: 0;
+  padding: 100px 0;
+  height: 100px;
+  width: 100%;
+
+  @media screen and (max-width: 450px) {
+    padding: 50px 0;
+    margin-top: 30px;
+  }
+}
+
+#container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}

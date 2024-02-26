@@ -1,0 +1,38 @@
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  margin: 0 10px !important;
+  padding: 20px 20px !important;
+  border-radius: 50% !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+  transition: background-color 0.3s !important;
+  margin-top: 270px !important;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-transition {
+  transition: opacity 1s ease-in-out;
+}
+
+.slide-transition.transitioning {
+  opacity: 0;
+}
+
+#contain::after {
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
