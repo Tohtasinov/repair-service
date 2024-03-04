@@ -68,6 +68,8 @@ const Contacts = (props) => {
             justifyContent: "center",
             paddingTop: "50px",
             paddingBottom: "50px",
+            paddingLeft: "20px",
+            paddingRight: "20px",
           }}
         >
           <form onSubmit={handleSubmit} sx={{ "& > div": { marginBottom: 2 } }}>

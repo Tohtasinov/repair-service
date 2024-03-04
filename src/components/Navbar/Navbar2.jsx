@@ -260,7 +260,7 @@ const Navbar2 = (props) => {
               height: "40px",
               color: "white",
             }}
-            onClick={() => navigate("/schedule-appointment")}
+            onClick={() => navigate("/schedule")}
           >
             Schedule Appointment
             <ArrowRightAltIcon />

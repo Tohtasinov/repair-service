@@ -4,3 +4,7 @@ body {
   margin-left: 5px;
   overflow-x: hidden !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -58,6 +58,7 @@ const DishwasherRepair = (props) => {
           marginTop={5}
           justifyContent={"center"}
           alignItems={"center"}
+          flexDirection={isSmallScreen ? "column" : "row"}
         >
           <Box marginBottom={isSmallScreen ? 2 : 0}>
             <img

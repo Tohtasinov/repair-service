@@ -104,7 +104,7 @@ const Footer = (props) => {
                 gap={2}
               >
                 <Link
-                  to="/location"
+                  to="/service-areas"
                   style={{
                     textDecoration: "none",
                     color: "white",
@@ -124,7 +124,7 @@ const Footer = (props) => {
                   Pricing
                 </Link>
                 <Link
-                  to="/contactUs"
+                  to="/contact"
                   style={{
                     textDecoration: "none",
                     color: "white",

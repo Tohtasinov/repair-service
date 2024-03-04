@@ -15,6 +15,7 @@ import AirConditionRepair from "./pages/AirConditioningRepair/AirConditioningRep
 import FurnaceRepair from "./pages/Furnace repair/FurnaceRepair";
 import "./GlobalStyles.css";
 import GarbageDisposalRepair from "./pages/GarbageDisposalRepair/GarbageDisposalRepair";
+import Schedule from "./pages/Schedule/Schedule";
 
 function App() {
   const theme = createTheme({
@@ -57,6 +58,7 @@ function App() {
             path="/service/garbage-disposal-repair"
             element={<GarbageDisposalRepair />}
           />
+          <Route path="/schedule" element={<Schedule />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

@@ -28,7 +28,12 @@ const HeaderForMobile = (props) => {
   };
 
   return (
-    <Box display="flex" justifyContent="space-between" alignItems="center">
+    <Box
+      display="flex"
+      justifyContent="space-between"
+      alignItems="center"
+      p={2}
+    >
       <img src={icon} alt="icon" />
       <Box width={32} />{" "}
       <IconButton
