@@ -46,12 +46,12 @@ const FurnaceRepair = (props) => {
               fontWeight: 400,
             }}
           >
-            Having trouble with your home’s heating system? Ace Tech is here to
-            help. Our team of qualified technicians can handle any furnace
-            repair you may need. We understand that a malfunctioning furnace can
-            be a major inconvenience, especially during the colder months.
-            That’s why we offer fast and efficient repair services so that your
-            home can be heated properly again.
+            Having trouble with your home’s heating system? Panda Appliance
+            Repair is here to help. Our team of qualified technicians can handle
+            any furnace repair you may need. We understand that a malfunctioning
+            furnace can be a major inconvenience, especially during the colder
+            months. That’s why we offer fast and efficient repair services so
+            that your home can be heated properly again.
           </Typography>
         </Box>
         <Box
@@ -129,7 +129,7 @@ const FurnaceRepair = (props) => {
             marginBottom: "50px",
           }}
         >
-          Contact us today at (888) 626-8800 24/7 or schedule a service
+          Contact us today at (872) 222-1801 24/7 or schedule a service
           appointment online and get 7% OFF
         </Typography>
       </Box>

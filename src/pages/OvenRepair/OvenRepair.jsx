@@ -46,11 +46,11 @@ const OvenRepair = (props) => {
               fontWeight: 400,
             }}
           >
-            Ace Tech’s skilled technicians are ready to provide reliable oven,
-            gas range, and stove repair services in Morris, Essex, and some
-            areas of Union County, in New Jersey. We understand that a kitchen
-            appliance breakdown can be a real inconvenience, which is why we
-            offer fast and efficient service.
+            Panda Appliance Repair’s skilled technicians are ready to provide
+            reliable oven, gas range, and stove repair services in Morris,
+            Essex, and some areas of Union County, in New Jersey. We understand
+            that a kitchen appliance breakdown can be a real inconvenience,
+            which is why we offer fast and efficient service.
           </Typography>
         </Box>
         <Box
@@ -96,9 +96,9 @@ const OvenRepair = (props) => {
             marginTop: "50px",
           }}
         >
-          Ace Tech works to provide comfort and convenience in everyday life.
-          Contact us for professional oven repair assistance, and we will be
-          happy to help you bring warmth back to your kitchen.
+          Panda Appliance Repair works to provide comfort and convenience in
+          everyday life. Contact us for professional oven repair assistance, and
+          we will be happy to help you bring warmth back to your kitchen.
         </Typography>
         <Box>
           <Typography
@@ -110,8 +110,8 @@ const OvenRepair = (props) => {
               marginTop: "50px",
             }}
           >
-            Ace Tech technicians are capable of repairing a wide range of stoves
-            and ovens, including but not limited to:
+            Panda Appliance Repair technicians are capable of repairing a wide
+            range of stoves and ovens, including but not limited to:
           </Typography>
           <Box
             display={"flex"}
@@ -242,10 +242,10 @@ const OvenRepair = (props) => {
             marginBottom: "50px",
           }}
         >
-          The main goal of Ace Tech is to provide the most convenient and
-          efficient service possible. We make every effort to complete all
-          repairs in one visit whenever possible. Schedule an appointment, and
-          our manager will call you back.
+          The main goal of Panda Appliance Repair is to provide the most
+          convenient and efficient service possible. We make every effort to
+          complete all repairs in one visit whenever possible. Schedule an
+          appointment, and our manager will call you back.
         </Typography>
       </Box>
       <Footer />

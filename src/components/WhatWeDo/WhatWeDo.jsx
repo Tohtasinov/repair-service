@@ -12,11 +12,11 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import refregiatorRepair1 from "../../assets/Refregirator_Repair.webp";
-import refregiatorRepair2 from "../../assets/Refregirator_Repair.webp";
-import refregiatorRepair3 from "../../assets/Refregirator_Repair.webp";
-import refregiatorRepair4 from "../../assets/Refregirator_Repair.webp";
-import refregiatorRepair5 from "../../assets/Refregirator_Repair.webp";
-import refregiatorRepair6 from "../../assets/Refregirator_Repair.webp";
+import refregiatorRepair2 from "../../assets/Microwave-oven-repair-.webp";
+import refregiatorRepair3 from "../../assets/washing-machine-repair.jpeg";
+import refregiatorRepair4 from "../../assets/dishwasher-repair-man-repairing-appliances.jpg";
+import refregiatorRepair5 from "../../assets/Dryer-Repair.png";
+import refregiatorRepair6 from "../../assets/Microwave-oven-repair-.webp";
 
 const cardData1 = [
   {

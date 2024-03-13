@@ -48,9 +48,9 @@ const DishwasherRepair = (props) => {
           >
             We understand that a malfunctioning dishwasher can seriously disrupt
             your daily life, so we make every effort to complete the repair as
-            quickly and efficiently as possible. Ace Tech offers transparent and
-            fixed prices for services and provides a 90-day warranty on all
-            parts and repairs.
+            quickly and efficiently as possible. Panda Appliance Repair offers
+            transparent and fixed prices for services and provides a 90-day
+            warranty on all parts and repairs.
           </Typography>
         </Box>
         <Box
@@ -98,8 +98,8 @@ const DishwasherRepair = (props) => {
               marginTop: "50px",
             }}
           >
-            At Ace Tech, we have extensive experience servicing a wide range of
-            dishwasher brands, including but not limited to:
+            At Panda Appliance Repair, we have extensive experience servicing a
+            wide range of dishwasher brands, including but not limited to:
           </Typography>
           <Box
             display={"flex"}

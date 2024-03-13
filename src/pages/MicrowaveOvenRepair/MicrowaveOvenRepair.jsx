@@ -125,8 +125,8 @@ const MicrowaveOverRepair = (props) => {
               marginBottom: "15px",
             }}
           >
-            At Ace Tech, we have extensive experience servicing a wide range of
-            microwave oven brands, including but not limited to:
+            At Panda Appliance Repair, we have extensive experience servicing a
+            wide range of microwave oven brands, including but not limited to:
           </Typography>
           <Box
             display={"flex"}

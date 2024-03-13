@@ -47,11 +47,11 @@ const DryerRepair = (props) => {
               fontWeight: 400,
             }}
           >
-            Ace Tech specialists have accumulated many years of experience in
-            repairing dryers of various brands and models. We understand that
-            problems with a dryer can occur at any time, so we are ready to
-            accept repair calls and help you solve the problems that have
-            arisen.
+            Panda Appliance Repair specialists have accumulated many years of
+            experience in repairing dryers of various brands and models. We
+            understand that problems with a dryer can occur at any time, so we
+            are ready to accept repair calls and help you solve the problems
+            that have arisen.
           </Typography>
         </Box>
         <Box
@@ -83,9 +83,9 @@ const DryerRepair = (props) => {
               provide repairs for issues such as dryer failure to start, unusual
               noise or vibration, poor drying quality, water leakage, or any
               other technical issues. <br />
-              Ace Tech professionals have access to genuine dryer parts, which
-              allows us to perform repairs quickly and efficiently, ensuring the
-              best performance and longest life for your dryer.
+              Panda Appliance Repair professionals have access to genuine dryer
+              parts, which allows us to perform repairs quickly and efficiently,
+              ensuring the best performance and longest life for your dryer.
             </Typography>
           </Box>
         </Box>

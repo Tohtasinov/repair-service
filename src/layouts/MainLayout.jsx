@@ -9,6 +9,7 @@ import WhatWeDo from "../components/WhatWeDo/WhatWeDo";
 import Brands from "../components/Brands/Brands";
 import Footer from "../components/Footer/Footer";
 import HeaderForMobile from "../components/HeaderForMobile/HeaderForMobile";
+import ChatButton from "../components/ChatBot/ChatButton";
 
 function MainLayout() {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
@@ -27,6 +28,7 @@ function MainLayout() {
       <Statistics />
       <WhatWeDo />
       <Footer />
+      <ChatButton />
     </Box>
   );
 }

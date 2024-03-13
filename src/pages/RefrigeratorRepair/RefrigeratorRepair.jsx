@@ -48,9 +48,9 @@ const RefrigeratorRepair = (props) => {
           >
             A refrigerator is an integral part of your home and household, so
             when it breaks down, it can be very stressful and inconvenient.
-            However, by contacting Ace Tech, you can rest assured that your
-            refrigerator will be restored to working order as quickly and
-            efficiently as possible.
+            However, by contacting Panda Appliance Repair, you can rest assured
+            that your refrigerator will be restored to working order as quickly
+            and efficiently as possible.
           </Typography>
         </Box>
         <Box
@@ -243,10 +243,10 @@ const RefrigeratorRepair = (props) => {
             marginBottom: "50px",
           }}
         >
-          The main goal of Ace Tech is to provide the most convenient and
-          efficient service possible. We make every effort to complete all
-          repairs in one visit whenever possible. Schedule an appointment, and
-          our manager will call you back.
+          The main goal of Panda Appliance Repair is to provide the most
+          convenient and efficient service possible. We make every effort to
+          complete all repairs in one visit whenever possible. Schedule an
+          appointment, and our manager will call you back.
         </Typography>
       </Box>
       <Footer />

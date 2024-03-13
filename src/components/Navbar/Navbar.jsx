@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import icon from "../../assets/logo.png";
+import icon from "../../assets/panda.jpg";
 import phoneIcon from "../../assets/smartphone.png";
 import location from "../../assets/location.png";
 
@@ -13,9 +13,18 @@ const Navbar = () => {
       sx={{ height: "145px" }}
       paddingBottom={5}
     >
-      <Box>
-        <img src={icon} alt="icon" />
+      <Box display={"flex"} flexDirection={"row"} alignItems={"center"}>
+        <img
+          src={icon}
+          alt="icon"
+          width={100}
+          style={{ borderRadius: "100px" }}
+        />
+        <Typography variant="h4" sx={{ marginLeft: "30px", color: "grey" }}>
+          Panda Appliance Repair
+        </Typography>
       </Box>
+
       <Box display={"flex"} alignItems={"center"}>
         <Box
           sx={{
@@ -24,7 +33,7 @@ const Navbar = () => {
             paddingRight: "30px",
           }}
         >
-          <a href="tel:+18886268800" style={{ textDecoration: "none" }}>
+          <a href="tel:(872) 222-1801" style={{ textDecoration: "none" }}>
             <img
               src={phoneIcon}
               alt="phone"
@@ -45,18 +54,18 @@ const Navbar = () => {
               Call us
             </Typography>
             <a
-              href="tel:+18886268800"
+              href="tel:(872) 222-1801"
               style={{ textDecoration: "none", color: "#6b739c" }}
             >
               <Typography sx={{ fontSize: "16px", fontWeight: 400 }}>
-                (888) 626-8800
+                (872) 222-1801
               </Typography>
             </a>
           </Box>
         </Box>
         <Box sx={{ display: "flex", paddingLeft: "30px" }}>
           <a
-            href="https://maps.google.com/?q=Livingston, New Jersey, 07039"
+            href="https://maps.google.com/?q=Chicago, Illinois"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none", color: "inherit" }}
@@ -81,13 +90,13 @@ const Navbar = () => {
               Find us
             </Typography>
             <a
-              href="https://maps.google.com/?q=Livingston, New Jersey, 07039"
+              href="https://maps.google.com/?q=Chicago, Illinois"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "#6b739c" }}
             >
               <Typography sx={{ fontSize: "16px", fontWeight: 400 }}>
-                Livingston, New Jersey, 07039
+                Chicago, Illinois
               </Typography>
             </a>
           </Box>

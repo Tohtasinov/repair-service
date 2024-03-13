@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Pricing from "./pages/Pricing/Pricing";
@@ -16,6 +16,18 @@ import FurnaceRepair from "./pages/Furnace repair/FurnaceRepair";
 import "./GlobalStyles.css";
 import GarbageDisposalRepair from "./pages/GarbageDisposalRepair/GarbageDisposalRepair";
 import Schedule from "./pages/Schedule/Schedule";
+import { useEffect } from "react";
+import Services from "./pages/Services/Services";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   const theme = createTheme({
@@ -25,12 +37,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<MainLayout />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/service-areas" element={<ServiceAreas />} />
           <Route path="/contact" element={<Contacts />} />
+          <Route path="/services" element={<Services />} />
           <Route
             path="/service/refrigerator-repair"
             element={<RefrigeratorRepair />}

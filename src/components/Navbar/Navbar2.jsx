@@ -71,11 +71,11 @@ const Navbar2 = (props) => {
     <Box sx={{ display: "flex", justifyContent: "center", marginTop: "-35px" }}>
       <Box
         sx={{
-          width: "70%",
+          width: "55%",
           backgroundColor: "white ",
           height: "70px",
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "center",
           alignItems: "center",
           textTransform: "uppercase",
           fontFamily: "Poppins, san-serif",
@@ -124,6 +124,7 @@ const Navbar2 = (props) => {
                 backgroundColor: "white",
                 borderRadius: "5px",
                 boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.2)",
+                width: "250px",
               }}
             >
               <ListItem
@@ -248,22 +249,6 @@ const Navbar2 = (props) => {
             onClick={() => navigate("/contact")}
           >
             Contact
-          </Button>
-        </Box>
-
-        {/* Кнопка для записи */}
-        <Box>
-          <Button
-            sx={{
-              backgroundColor: "#FF6014",
-              width: "250px",
-              height: "40px",
-              color: "white",
-            }}
-            onClick={() => navigate("/schedule")}
-          >
-            Schedule Appointment
-            <ArrowRightAltIcon />
           </Button>
         </Box>
       </Box>

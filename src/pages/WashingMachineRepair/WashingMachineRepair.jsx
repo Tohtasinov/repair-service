@@ -47,8 +47,8 @@ const WashingMachineRepair = (props) => {
             }}
           >
             Has your washing machine stopped working, and do you need reliable
-            and professional help to repair it? Ace Tech is the company you can
-            count on.
+            and professional help to repair it?Panda Appliance Repair is the
+            company you can count on.
           </Typography>
         </Box>
         <Box
@@ -96,8 +96,8 @@ const WashingMachineRepair = (props) => {
           in top condition, so we offer transparent and fixed prices for all
           types of repairs. We have no hidden extras and make every effort to
           complete repairs in one visit whenever possible. You can be confident
-          in the quality of our work. Contact Ace Tech, and we will gladly get
-          your washing machine back in service, so you can enjoy its
+          in the quality of our work. ContactPanda Appliance Repair, and we will
+          gladly get your washing machine back in service, so you can enjoy its
           functionality again.
         </Typography>
         <Box>
@@ -110,8 +110,8 @@ const WashingMachineRepair = (props) => {
               marginTop: "50px",
             }}
           >
-            At Ace Tech, we have extensive experience servicing a wide range of
-            washing machine brands, including but not limited to:
+            AtPanda Appliance Repair, we have extensive experience servicing a
+            wide range of washing machine brands, including but not limited to:
           </Typography>
           <Box
             display={"flex"}

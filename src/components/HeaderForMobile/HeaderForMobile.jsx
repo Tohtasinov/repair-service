@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { Box, IconButton, Menu, MenuItem } from "@mui/material";
+import { Box, IconButton, Menu, MenuItem, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
-import icon from "../../assets/logo.png";
+import icon from "../../assets/panda.jpg";
 import Header from "../Header/Header";
 
 const HeaderForMobile = (props) => {
@@ -34,7 +34,16 @@ const HeaderForMobile = (props) => {
       alignItems="center"
       p={2}
     >
-      <img src={icon} alt="icon" />
+      <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
+        <img
+          src={icon}
+          alt="icon"
+          height={60}
+          width={60}
+          style={{ borderRadius: "50px" }}
+        />
+        <Typography marginLeft={2}>Panda Appliance Repair</Typography>
+      </Box>
       <Box width={32} />{" "}
       <IconButton
         aria-label="menu"
@@ -76,9 +85,6 @@ const HeaderForMobile = (props) => {
         </MenuItem>
         <MenuItem component={Link} to="/contact">
           Contact
-        </MenuItem>
-        <MenuItem component={Link} to="/schedule-appointment">
-          Schedule Appointment
         </MenuItem>
       </Menu>
       <Menu

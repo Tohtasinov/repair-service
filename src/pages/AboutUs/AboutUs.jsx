@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { Box, Button, Grid, Typography, useMediaQuery } from "@mui/material";
 import Navbar2 from "../../components/Navbar/Navbar2";
 import SubNavbar from "../../components/Navbar/SubNavbar";
-import photo from "./assets/about_page.jpg";
+import photo from "../../assets/panda.jpg";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import CheckIcon from "@mui/icons-material/Check";
 import "./aboutUs.css";
@@ -32,7 +32,7 @@ const AboutUs = (props) => {
         }}
         justifyContent={"center"}
       >
-        <Box>
+        <Box marginTop={5}>
           <img
             src={photo}
             alt="photo1"
@@ -52,7 +52,7 @@ const AboutUs = (props) => {
               marginTop: "20px",
             }}
           >
-            ACE TECH
+            Panda Appliance Repair
           </Typography>
           <Typography
             sx={{
@@ -84,10 +84,10 @@ const AboutUs = (props) => {
               lineHeight: "30px",
             }}
           >
-            Ace Tech has been a trusted repair service provider for over 30
-            years in Morris Essex and some areas of Union County, in New Jersey.
-            Our primary objective is to provide our customers with superior
-            service and value by leveraging our extensive knowledge and
+            Panda Appliance Repair has been a trusted repair service provider
+            for over 30 years in Morris Essex and some areas of Union County, in
+            New Jersey. Our primary objective is to provide our customers with
+            superior service and value by leveraging our extensive knowledge and
             expertise in the industry.
           </Typography>
           <Box
@@ -220,11 +220,11 @@ const AboutUs = (props) => {
           </Typography>
           <Typography>
             Our commitment to staying up-to-date with the latest information and
-            services in the industry is one of our top priorities at Ace Tech.
-            As a result, we are equipped to handle any service and repair needs
-            you may have. Our team service many major brands and in 95% cases we
-            offer same-day service to ensure fast, friendly, and affordable
-            repair services.
+            services in the industry is one of our top priorities at Panda
+            Appliance Repair. As a result, we are equipped to handle any service
+            and repair needs you may have. Our team service many major brands
+            and in 95% cases we offer same-day service to ensure fast, friendly,
+            and affordable repair services.
           </Typography>
         </Grid>
         <Grid

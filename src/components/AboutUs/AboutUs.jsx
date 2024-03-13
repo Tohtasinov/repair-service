@@ -37,11 +37,12 @@ const AboutUs = (props) => {
             Successful customer experiences since 1993
           </Typography>
           <Typography marginTop={2} style={{ color: "grey" }}>
-            Our team of skilled professionals offers friendly, professional
-            service and uses factory authorized parts for most major brands.
-            We’re proud to offer some of the lowest rates for service calls
-            without compromising on quality in Morris Essex and some areas of
-            Union County, New Jersey.
+            "Panda Appliance Repair" offers reliable and efficient repair
+            services for a variety of household appliances, including
+            refrigerators, washing machines, ovens, and dishwashers. With a
+            skilled team of technicians and a commitment to customer
+            satisfaction, we strive to restore your appliances to optimal
+            performance, ensuring convenience and peace of mind for our clients.
           </Typography>
           <Button
             sx={{ marginTop: 2, border: "1px solid grey", color: "black" }}

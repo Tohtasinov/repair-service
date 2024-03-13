@@ -97,7 +97,7 @@ const AirConditionRepair = (props) => {
           }}
         >
           Don’t let an air conditioning breakdown ruin your summer fun – call
-          Ace Tech today!
+          Panda Appliance Repair today!
         </Typography>
 
         <Box>
@@ -110,7 +110,8 @@ const AirConditionRepair = (props) => {
               marginTop: "50px",
             }}
           >
-            The team of technicians at Ace Tech offers the following services:
+            The team of technicians at Panda Appliance Repair offers the
+            following services:
           </Typography>
           <Box
             display={"flex"}
@@ -139,7 +140,7 @@ const AirConditionRepair = (props) => {
             marginBottom: "50px",
           }}
         >
-          Contact us today at (888) 626-8800 24/7 or schedule a service
+          Contact us today at (872) 222-1801 24/7 or schedule a service
           appointment online and get 7% OFF
         </Typography>
       </Box>

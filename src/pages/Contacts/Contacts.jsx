@@ -12,6 +12,7 @@ import Navbar2 from "../../components/Navbar/Navbar2";
 import SubNavbar from "../../components/Navbar/SubNavbar";
 import Footer from "../../components/Footer/Footer";
 import HeaderForMobile from "../../components/HeaderForMobile/HeaderForMobile";
+import axios from "axios";
 
 const ariaLabel = { "aria-label": "description" };
 
@@ -19,10 +20,11 @@ const Contacts = (props) => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
 
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
     email: "",
-    phone: "",
+    phoneNumber: "",
     subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -33,10 +35,27 @@ const Contacts = (props) => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Здесь вы можете добавить логику для отправки данных формы
-    console.log(formData);
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Предотвращаем стандартное действие отправки формы
+
+    try {
+      // Выполняем POST-запрос с данными формы
+      await axios.post("http://localhost:8080/api/sendEmail/send", formData);
+      // Если запрос выполнен успешно, можем выполнить какие-то действия, например, показать сообщение об успешной отправке
+      alert("Message sent successfully!");
+      // Очищаем данные формы после успешной отправки
+      setFormData({
+        username: "",
+        email: "",
+        phoneNumber: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      // Если произошла ошибка при выполнении запроса, можем показать сообщение об ошибке
+      alert("Error occurred while sending message.");
+      console.error(error);
+    }
   };
 
   return (
@@ -72,7 +91,7 @@ const Contacts = (props) => {
             paddingRight: "20px",
           }}
         >
-          <form onSubmit={handleSubmit} sx={{ "& > div": { marginBottom: 2 } }}>
+          <form onSubmit={handleSubmit}>
             <Box
               sx={{
                 display: "flex",
@@ -83,13 +102,13 @@ const Contacts = (props) => {
               <Box sx={{ flex: 1 }}>
                 <Box sx={{ marginBottom: 2 }}>
                   <TextField
-                    id="name"
-                    name="name"
+                    id="username"
+                    name="username"
                     variant="outlined"
                     placeholder="Your name"
                     inputProps={ariaLabel}
                     fullWidth
-                    value={formData.name}
+                    value={formData.username}
                     onChange={handleChange}
                   />
                 </Box>
@@ -118,12 +137,12 @@ const Contacts = (props) => {
               <Box sx={{ flex: 1 }} width={"300px"}>
                 <Box sx={{ marginBottom: 2 }}>
                   <TextField
-                    id="phone"
-                    name="phone"
+                    id="phoneNumber"
+                    name="phoneNumber"
                     placeholder="Phone number"
                     variant="outlined"
                     fullWidth
-                    value={formData.phone}
+                    value={formData.phoneNumber}
                     onChange={handleChange}
                   />
                 </Box>
@@ -219,7 +238,7 @@ const Contacts = (props) => {
                   fontSize: "15px",
                 }}
               >
-                (888)-626-8800
+                (872) 222-1801
               </Typography>
             </Box>
             <Box>
@@ -239,30 +258,9 @@ const Contacts = (props) => {
                   fontSize: "15px",
                 }}
               >
-                Acetechrepairnj@gmail.com
+                pandaapplianceteam@gmail.com
               </Typography>
             </Box>
-          </Box>
-          <Box>
-            <Typography
-              sx={{
-                color: "#828893",
-                fontWeight: 600,
-                fontSize: "16px",
-                marginTop: "20px",
-              }}
-            >
-              Address:
-            </Typography>
-            <Typography
-              sx={{
-                color: "#111",
-                fontWeight: 600,
-                fontSize: "15px",
-              }}
-            >
-              119 East Cedar Street, Livingston, NJ, 07039
-            </Typography>
           </Box>
         </Box>
       </Box>

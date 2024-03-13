@@ -56,7 +56,7 @@ const Statistics = (props) => {
             fontSize: "35px",
           }}
         >
-          Look no further than Ace Tech!
+          Look no further than Panda Appliance Repair!
         </Typography>
       </Box>
       <Box

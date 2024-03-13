@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
-import icon from "../../assets/footer-logo.png";
+import icon from "../../assets/panda.jpg";
 
 const Footer = (props) => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
@@ -31,14 +31,24 @@ const Footer = (props) => {
           justifyContent={"start"}
           marginRight="20px"
         >
-          <img src={icon} alt="icon" style={{ marginBottom: "10px" }} />
+          <img
+            src={icon}
+            alt="icon"
+            style={{
+              width: "150px",
+              borderRadius: "100px",
+              marginBottom: "20px",
+              marginLeft: "90px",
+              marginTop: "-50px",
+            }}
+          />
           <Typography
             variant="body1"
             maxWidth={400}
             sx={{ marginBottom: isSmallScreen ? "50px" : "0" }}
           >
-            Ace Tech offers fast, friendly and professional appliance repair
-            services.
+            Panda Appliance Repair offers fast, friendly and professional
+            appliance repair services.
           </Typography>
         </Box>
 
@@ -137,7 +147,7 @@ const Footer = (props) => {
             </Box>
           </Box>
         </Box>
-        <Box>
+        <Box marginTop={-5}>
           <Typography
             variant="h6"
             sx={{ borderBottom: " 2px solid #FF6014 ", marginBottom: "10px" }}
@@ -145,8 +155,7 @@ const Footer = (props) => {
             Working Hours
           </Typography>
           <Box display="flex" flexDirection="column" gap={2}>
-            <Typography>Monday - Friday: 8:00AM - 6:00PM</Typography>
-            <Typography>Saturday: 10:00AM - 4:00PM</Typography>
+            <Typography>Monday - Saturday: 8:00AM - 6:00PM</Typography>
             <Typography>Sunday: Closed</Typography>
           </Box>
         </Box>
@@ -165,7 +174,7 @@ const Footer = (props) => {
             marginBottom: "-20px",
           }}
         >
-          Copyright © 2024 Ace tech Inc. All rights reserved.
+          Copyright © 2024 Panda Appliance Repair Inc. All rights reserved.
         </Typography>
       </Box>
     </Box>
