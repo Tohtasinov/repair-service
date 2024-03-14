@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { Box, IconButton, Menu, MenuItem, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 
 import icon from "../../assets/panda.jpg";
-import Header from "../Header/Header";
 
 const HeaderForMobile = (props) => {
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
