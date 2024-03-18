@@ -10,12 +10,17 @@ import Brands from "../components/Brands/Brands";
 import Footer from "../components/Footer/Footer";
 import HeaderForMobile from "../components/HeaderForMobile/HeaderForMobile";
 import ChatButton from "../components/ChatBot/ChatButton";
+import { Helmet } from "react-helmet";
+import Discounts from "../components/Discounts/Discounts";
 
 function MainLayout() {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
 
   return (
     <Box>
+      <Helmet>
+        <title>Panda Appliance Repair</title>
+      </Helmet>
       {!isSmallScreen && (
         <>
           <Navbar />
@@ -27,6 +32,7 @@ function MainLayout() {
       <AboutUs />
       <Statistics />
       <WhatWeDo />
+      <Discounts />
       <Footer />
       <ChatButton />
     </Box>

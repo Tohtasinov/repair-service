@@ -10,12 +10,16 @@ import "./aboutUs.css";
 import WhatWeDo from "../../components/WhatWeDo/WhatWeDo";
 import Footer from "../../components/Footer/Footer";
 import HeaderForMobile from "../../components/HeaderForMobile/HeaderForMobile";
+import { Helmet } from "react-helmet";
 
 const AboutUs = (props) => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
 
   return (
-    <Box>
+    <Box marginRight={-2} pr={-2}>
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       {!isSmallScreen && (
         <>
           <Navbar />

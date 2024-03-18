@@ -13,6 +13,7 @@ import SubNavbar from "../../components/Navbar/SubNavbar";
 import Footer from "../../components/Footer/Footer";
 import HeaderForMobile from "../../components/HeaderForMobile/HeaderForMobile";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const ariaLabel = { "aria-label": "description" };
 
@@ -60,6 +61,9 @@ const Contacts = (props) => {
 
   return (
     <Box>
+      <Helmet>
+        <title>Contacts</title>
+      </Helmet>
       {!isSmallScreen && (
         <>
           <Navbar />
@@ -88,7 +92,6 @@ const Contacts = (props) => {
             paddingTop: "50px",
             paddingBottom: "50px",
             paddingLeft: "20px",
-            paddingRight: "20px",
           }}
         >
           <form onSubmit={handleSubmit}>

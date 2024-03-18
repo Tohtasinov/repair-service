@@ -6,12 +6,16 @@ import Navbar2 from "../../components/Navbar/Navbar2";
 import SubNavbar from "../../components/Navbar/SubNavbar";
 import HeaderForMobile from "../../components/HeaderForMobile/HeaderForMobile";
 import Footer from "../../components/Footer/Footer";
+import { Helmet } from "react-helmet";
 
 const ServiceAreas = (props) => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
 
   return (
     <Box marginRight={1}>
+      <Helmet>
+        <title>Service Areas</title>
+      </Helmet>
       {!isSmallScreen && (
         <>
           <Navbar />

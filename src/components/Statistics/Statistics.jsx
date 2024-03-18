@@ -64,6 +64,7 @@ const Statistics = (props) => {
         justifyContent={"center"}
         color={"black"}
         flexDirection={isSmallScreen ? "column" : "row"}
+        alignItems={"center"}
       >
         <Box
           sx={{

@@ -7,12 +7,16 @@ import Navbar2 from "../../components/Navbar/Navbar2";
 import SubNavbar from "../../components/Navbar/SubNavbar";
 import Footer from "../../components/Footer/Footer";
 import HeaderForMobile from "../../components/HeaderForMobile/HeaderForMobile";
+import { Helmet } from "react-helmet";
 
 const DishwasherRepair = (props) => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
 
   return (
     <Box>
+      <Helmet>
+        <title>Dishwasher Repair</title>
+      </Helmet>
       {!isSmallScreen && (
         <>
           <Navbar />
