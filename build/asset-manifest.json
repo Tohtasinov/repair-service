@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95ff5dcf.css",
+    "main.js": "/static/js/main.25c154a7.js",
+    "static/js/453.6562bf5d.chunk.js": "/static/js/453.6562bf5d.chunk.js",
+    "static/media/Dryer-Repair.png": "/static/media/Dryer-Repair.77e9c05408559c7044a0.png",
+    "static/media/Dishwasher-Repair.jpg": "/static/media/Dishwasher-Repair.242a21f29cc5c6227c6c.jpg",
+    "static/media/dishwasher-repair-man-repairing-appliances.jpg": "/static/media/dishwasher-repair-man-repairing-appliances.94f867a2302cff5e0fd5.jpg",
+    "static/media/panda.jpg": "/static/media/panda.59a24787e810ebfb71b8.jpg",
+    "static/media/washing-machine-repair.jpeg": "/static/media/washing-machine-repair.4932cf24190699af7b58.jpeg",
+    "static/media/Garbage-Disposal-Repair.jpg": "/static/media/Garbage-Disposal-Repair.69ad6035b0ca8a0558fa.jpg",
+    "static/media/appliance-repair-services.webp": "/static/media/appliance-repair-services.feb0c0a853ab1eec7095.webp",
+    "static/media/boiler-installation-services.jpg": "/static/media/boiler-installation-services.d98ba36eaa71cf992999.jpg",
+    "static/media/about-2.jpg": "/static/media/about-2.88ad7e169e309f7ce266.jpg",
+    "static/media/about-1.jpg": "/static/media/about-1.ce17567c0a1f20a1db91.jpg",
+    "static/media/repairing-a-dishwasher.jpg": "/static/media/repairing-a-dishwasher.057967c7949c134fa0dd.jpg",
+    "static/media/air-conditioning-repair.jpg": "/static/media/air-conditioning-repair.f5c69028a38693ae4c3e.jpg",
+    "static/media/Microwave-oven-repair-.webp": "/static/media/Microwave-oven-repair-.b435380e0b2d3b8a63e7.webp",
+    "static/media/16.webp": "/static/media/16.43a6e42204dee1444fb2.webp",
+    "static/media/Refregirator_Repair.webp": "/static/media/Refregirator_Repair.8750dd44855b44538cc4.webp",
+    "static/media/chatIcon.png": "/static/media/chatIcon.9535e054773793d5a3ea.png",
+    "static/media/Coupon2.png": "/static/media/Coupon2.de2b37a95f1dfcdc032d.png",
+    "static/media/Coupon1.png": "/static/media/Coupon1.ceb565c69d4f999f040e.png",
+    "static/media/phone-call.png": "/static/media/phone-call.d35848942c955a6232b3.png",
+    "static/media/11.webp": "/static/media/11.69a570cc3a0fcbea32d0.webp",
+    "static/media/7.webp": "/static/media/7.0e1f5077f2445844e581.webp",
+    "static/media/8.webp": "/static/media/8.1d598a9fa1d730c059d4.webp",
+    "static/media/2.webp": "/static/media/2.78bc76f12efce82751c4.webp",
+    "static/media/10.webp": "/static/media/10.2e91370c0e8a290641d0.webp",
+    "index.html": "/index.html",
+    "main.95ff5dcf.css.map": "/static/css/main.95ff5dcf.css.map",
+    "main.25c154a7.js.map": "/static/js/main.25c154a7.js.map",
+    "453.6562bf5d.chunk.js.map": "/static/js/453.6562bf5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95ff5dcf.css",
+    "static/js/main.25c154a7.js"
+  ]
+}
