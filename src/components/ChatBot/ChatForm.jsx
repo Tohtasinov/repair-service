@@ -20,7 +20,7 @@ const ChatForm = ({ onClose }) => {
 
   const handleSubmit = async () => {
     try {
-      const apiUrl = "http://localhost:8080/api/sendEmail/send";
+      const apiUrl = "http://198.54.125.88/api/sendEmail/send";
 
       const formData = {
         username,
