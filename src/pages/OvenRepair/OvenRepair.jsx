@@ -51,10 +51,10 @@ const OvenRepair = (props) => {
             }}
           >
             Panda Appliance Repair’s skilled technicians are ready to provide
-            reliable oven, gas range, and stove repair services in Morris,
-            Essex, and some areas of Union County, in New Jersey. We understand
-            that a kitchen appliance breakdown can be a real inconvenience,
-            which is why we offer fast and efficient service.
+            reliable oven, gas range, and stove repair servicesIn Chicago and
+            surrounding areas. We understand that a kitchen appliance breakdown
+            can be a real inconvenience, which is why we offer fast and
+            efficient service.
           </Typography>
         </Box>
         <Box

@@ -30,7 +30,7 @@ const ServiceAreas = (props) => {
         alignItems={isSmallScreen ? "start" : "center"}
         marginLeft={1}
       >
-        <h1>We cover most of Morris, Essex, and Union Counties</h1>
+        <h1>We cover most In Chicago and surrounding areas</h1>
         <Box>
           <h2> MORRIS County, NJ</h2>
 

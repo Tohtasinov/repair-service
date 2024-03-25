@@ -53,10 +53,10 @@ const AirConditionRepair = (props) => {
           >
             Summer can be an incredibly enjoyable time of year if you can stay
             cool and comfortable. However, if your air conditioner breaks down,
-            it can put a damper on your plans. That’s why Ace Tech’s team of
-            skilled technicians is ready to provide fast and reliable air
-            conditioning repair services for residents of Morris, Essex, and
-            some areas of Union County.
+            it can put a damper on your plans. That’s why Panda Appliance
+            Repair’s team of skilled technicians is ready to provide fast and
+            reliable air conditioning repair services In Chicago and surrounding
+            areas.
           </Typography>
         </Box>
         <Box

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.95ff5dcf.css",
-    "main.js": "/static/js/main.06b721f3.js",
+    "main.js": "/static/js/main.a85f990b.js",
     "static/js/453.6562bf5d.chunk.js": "/static/js/453.6562bf5d.chunk.js",
     "static/media/Dryer-Repair.png": "/static/media/Dryer-Repair.77e9c05408559c7044a0.png",
     "static/media/Dishwasher-Repair.jpg": "/static/media/Dishwasher-Repair.242a21f29cc5c6227c6c.jpg",
@@ -29,11 +29,11 @@
     "static/media/10.webp": "/static/media/10.2e91370c0e8a290641d0.webp",
     "index.html": "/index.html",
     "main.95ff5dcf.css.map": "/static/css/main.95ff5dcf.css.map",
-    "main.06b721f3.js.map": "/static/js/main.06b721f3.js.map",
+    "main.a85f990b.js.map": "/static/js/main.a85f990b.js.map",
     "453.6562bf5d.chunk.js.map": "/static/js/453.6562bf5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95ff5dcf.css",
-    "static/js/main.06b721f3.js"
+    "static/js/main.a85f990b.js"
   ]
 }
