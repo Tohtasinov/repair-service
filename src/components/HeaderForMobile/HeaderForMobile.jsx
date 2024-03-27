@@ -33,13 +33,15 @@ const HeaderForMobile = (props) => {
       p={2}
     >
       <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
-        <img
-          src={icon}
-          alt="icon"
-          height={60}
-          width={60}
-          style={{ borderRadius: "50px" }}
-        />
+        <Link to="/">
+          <img
+            src={icon}
+            alt="icon"
+            height={60}
+            width={60}
+            style={{ borderRadius: "50px" }}
+          />
+        </Link>
         <Typography marginLeft={2}>Panda Appliance Repair</Typography>
       </Box>
       <Box width={32} />{" "}

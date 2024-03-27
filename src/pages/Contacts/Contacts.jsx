@@ -18,7 +18,7 @@ import { Helmet } from "react-helmet";
 const ariaLabel = { "aria-label": "description" };
 
 const Contacts = (props) => {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(960));
 
   const [formData, setFormData] = useState({
     username: "",
@@ -41,7 +41,10 @@ const Contacts = (props) => {
 
     try {
       // Выполняем POST-запрос с данными формы
-      await axios.post("http://localhost:8080/api/sendEmail/send", formData);
+      await axios.post(
+        "https://pandaappliancerepair/api/sendEmail/send",
+        formData
+      );
       // Если запрос выполнен успешно, можем выполнить какие-то действия, например, показать сообщение об успешной отправке
       alert("Message sent successfully!");
       // Очищаем данные формы после успешной отправки

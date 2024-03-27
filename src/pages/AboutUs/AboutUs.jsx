@@ -13,7 +13,7 @@ import HeaderForMobile from "../../components/HeaderForMobile/HeaderForMobile";
 import { Helmet } from "react-helmet";
 
 const AboutUs = (props) => {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(960));
 
   return (
     <Box marginRight={-2} pr={-2}>
@@ -78,7 +78,7 @@ const AboutUs = (props) => {
               marginBottom: "10px",
             }}
           >
-            Success Experiences since 1993
+            Success Experiences since 2018
           </Typography>
           <Typography
             sx={{
@@ -89,10 +89,10 @@ const AboutUs = (props) => {
             }}
           >
             Panda Appliance Repair has been a trusted repair service provider
-            for over 30 years in Morris Essex and some areas of Union County, in
-            New Jersey. Our primary objective is to provide our customers with
-            superior service and value by leveraging our extensive knowledge and
-            expertise in the industry.
+            for over 7 years In Chicago and surrounding areas. Our primary
+            objective is to provide our customers with superior service and
+            value by leveraging our extensive knowledge and expertise in the
+            industry.
           </Typography>
           <Box
             display={"flex"}

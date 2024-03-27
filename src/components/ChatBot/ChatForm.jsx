@@ -17,10 +17,13 @@ const ChatForm = ({ onClose }) => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isMediumScreen = useMediaQuery((theme) =>
+    theme.breakpoints.between(451, 960)
+  );
 
   const handleSubmit = async () => {
     try {
-      const apiUrl = "http://198.54.125.88/api/sendEmail/send";
+      const apiUrl = "https://198.54.125.88:443/api/sendEmail/send";
 
       const formData = {
         username,
@@ -60,7 +63,7 @@ const ChatForm = ({ onClose }) => {
         color: "#152339",
         padding: "20px",
         borderRadius: "10px",
-        width: "23%",
+        width: isMediumScreen ? "400px" : "23%",
         maxWidth: "400px",
         backgroundColor: "white",
         "@media (max-width: 600px)": {

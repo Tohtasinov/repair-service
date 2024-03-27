@@ -23,7 +23,7 @@ const cardData1 = [
     image: refregiatorRepair1,
     title: "Refrigerator Repair",
     description:
-      "Is your broken fridge causing you stress and inconvenience? Let Ace Tech services help you out!",
+      "Is your broken fridge causing you stress and inconvenience? Let Panda Appliance Repair services help you out!",
     link: "/service/refrigerator-repair", // Уникальный путь для первой карточки
   },
   {
@@ -67,7 +67,7 @@ const cardData2 = [
 ];
 
 const WhatWeDo = (props) => {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(960));
 
   return (
     <Box>

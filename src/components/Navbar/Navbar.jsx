@@ -3,6 +3,7 @@ import React from "react";
 import icon from "../../assets/panda.jpg";
 import phoneIcon from "../../assets/smartphone.png";
 import location from "../../assets/location.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -13,17 +14,19 @@ const Navbar = () => {
       sx={{ height: "145px" }}
       paddingBottom={5}
     >
-      <Box display={"flex"} flexDirection={"row"} alignItems={"center"}>
-        <img
-          src={icon}
-          alt="icon"
-          width={100}
-          style={{ borderRadius: "100px" }}
-        />
-        <Typography variant="h4" sx={{ marginLeft: "30px", color: "grey" }}>
-          Panda Appliance Repair
-        </Typography>
-      </Box>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <Box display={"flex"} flexDirection={"row"} alignItems={"center"}>
+          <img
+            src={icon}
+            alt="icon"
+            width={100}
+            style={{ borderRadius: "100px" }}
+          />
+          <Typography variant="h4" sx={{ marginLeft: "30px", color: "grey" }}>
+            Panda Appliance Repair
+          </Typography>
+        </Box>
+      </Link>
 
       <Box display={"flex"} alignItems={"center"}>
         <Box

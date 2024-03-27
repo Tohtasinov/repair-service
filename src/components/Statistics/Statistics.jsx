@@ -44,8 +44,7 @@ const Statistics = (props) => {
             fontSize: "25px",
           }}
         >
-          Looking for fast and reliable appliance repair services in in New
-          Jersey?
+          Looking for fast and reliable appliance repair services in Chicago?
         </Typography>
         <Typography
           variant="h5"

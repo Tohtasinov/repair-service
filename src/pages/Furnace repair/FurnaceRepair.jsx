@@ -10,7 +10,7 @@ import HeaderForMobile from "../../components/HeaderForMobile/HeaderForMobile";
 import { Helmet } from "react-helmet";
 
 const FurnaceRepair = (props) => {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(960));
 
   return (
     <Box>
@@ -87,8 +87,8 @@ const FurnaceRepair = (props) => {
               offer scheduled maintenance services to ensure optimal efficiency
               and prevent future breakdowns. <br />
               Don’t let a malfunctioning heating system disrupt your comfort
-              this season. Contact Ace Tech today for all your furnace repair
-              needs.
+              this season. Contact Panda Appliance Repair today for all your
+              furnace repair needs.
             </Typography>
           </Box>
         </Box>

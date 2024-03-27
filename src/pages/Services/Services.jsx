@@ -73,7 +73,7 @@ const cardData2 = [
 ];
 
 const Services = (props) => {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(960));
 
   return (
     <Box>

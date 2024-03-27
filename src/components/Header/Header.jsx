@@ -12,7 +12,7 @@ const Header = () => {
     {
       title: "Professional services for all your home appliance needs",
       subtitle:
-        "We’re proud to offer some of the lowest rates for service calls without compromising on quality in Morris, Essex and some areas of Union County, in New Jersey.",
+        "We’re proud to offer some of the lowest rates for service calls without compromising on quality In Chicago and surrounding areas.",
       buttonLabel: "More about us",
       backgroundImage: repair1,
       pagePath: "/about-us",
@@ -36,7 +36,7 @@ const Header = () => {
     {
       title: "We offer Instant & quality home appliance services",
       subtitle:
-        "Ace Tech has been a trusted repair service provider for over 30 years in Morris, Essex and some areas of Union County, in New Jersey.",
+        "Ace Tech has been a trusted repair service provider for over 30 years In Chicago and surrounding areas.",
       buttonLabel: " See Details",
       backgroundImage: repair3,
       pagePath: "/services",
@@ -44,6 +44,7 @@ const Header = () => {
   ];
 
   const isMobile = useMediaQuery("(max-width:450px)");
+  const isTablet = useMediaQuery("(max-width:960px)");
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [transitioning, setTransitioning] = useState(false);
@@ -92,41 +93,46 @@ const Header = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: isMobile ? "center" : "left",
+        alignItems: isTablet ? "center" : isMobile ? "center" : "left",
         color: "white",
         zIndex: 0,
-        paddingLeft: isMobile ? "20px" : "200px", // Изменяем отступ слева для мобильных устройств
+        paddingLeft: isMobile ? "20px" : isTablet ? "100px" : "200px", // Изменены отступы для планшетов
         marginLeft: "-7px",
         marginRight: "-7px",
         "&::after": {
-          background: "rgba(0, 0, 0, 0.7)",
+          content: '""',
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: "rgba(0, 0, 0, 0.4)", // Полупрозрачный черный оттенок
           zIndex: 2,
         },
       }}
       onMouseEnter={() => setIsMouseOver(true)}
       onMouseLeave={() => setIsMouseOver(false)}
     >
-      {isMouseOver &&
-        isMobile && ( // Показываем кнопки навигации только на мобильных устройствах
-          <React.Fragment>
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ position: "absolute", left: "10px", top: "10px" }}
-              onClick={handlePrevSlide}
-            >
-              <KeyboardBackspaceIcon />
-            </Button>
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ position: "absolute", right: "10px", top: "10px" }}
-              onClick={handleNextSlide}
-            >
-              <EastIcon />
-            </Button>
-          </React.Fragment>
-        )}
+      {isMouseOver && isMobile && (
+        <React.Fragment>
+          <Button
+            variant="contained"
+            color="primary"
+            style={{ position: "absolute", left: "10px", top: "10px" }}
+            onClick={handlePrevSlide}
+          >
+            <KeyboardBackspaceIcon />
+          </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            style={{ position: "absolute", right: "10px", top: "10px" }}
+            onClick={handleNextSlide}
+          >
+            <EastIcon />
+          </Button>
+        </React.Fragment>
+      )}
       <Typography
         variant="h2"
         gutterBottom
@@ -134,7 +140,8 @@ const Header = () => {
           letterSpacing: "2px",
           fontSize: isMobile ? "32px" : "48px",
           width: isMobile ? "100%" : "700px",
-        }} // Изменяем размер текста для мобильных устройств
+          zIndex: 999,
+        }}
       >
         {slides[currentSlide].title}
       </Typography>
@@ -145,7 +152,8 @@ const Header = () => {
           letterSpacing: "1px",
           fontSize: isMobile ? "14px" : "16px",
           width: isMobile ? "100%" : "600px",
-        }} // Изменяем размер текста для мобильных устройств
+          zIndex: 999,
+        }}
       >
         {slides[currentSlide].subtitle}
       </Typography>
@@ -155,6 +163,7 @@ const Header = () => {
           backgroundColor: "#FF6014",
           color: "white",
           marginTop: "20px",
+          zIndex: 999,
         }}
       >
         {slides[currentSlide].buttonLabel}

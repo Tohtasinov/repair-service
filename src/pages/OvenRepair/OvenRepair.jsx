@@ -10,7 +10,7 @@ import HeaderForMobile from "../../components/HeaderForMobile/HeaderForMobile";
 import { Helmet } from "react-helmet";
 
 const OvenRepair = (props) => {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(960));
 
   return (
     <Box>

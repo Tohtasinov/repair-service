@@ -9,7 +9,7 @@ import Footer from "../../components/Footer/Footer";
 import { Helmet } from "react-helmet";
 
 const ServiceAreas = (props) => {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(960));
 
   return (
     <Box marginRight={1}>
@@ -31,7 +31,7 @@ const ServiceAreas = (props) => {
         marginLeft={1}
       >
         <h1>We cover most In Chicago and surrounding areas</h1>
-        <Box>
+        {/* <Box>
           <h2> MORRIS County, NJ</h2>
 
           <Box
@@ -148,7 +148,7 @@ const ServiceAreas = (props) => {
               </ul>
             </Box>
           </Box>
-        </Box>
+        </Box> */}
       </Box>
       <Footer />
     </Box>

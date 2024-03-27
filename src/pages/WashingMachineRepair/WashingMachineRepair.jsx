@@ -10,7 +10,7 @@ import HeaderForMobile from "../../components/HeaderForMobile/HeaderForMobile";
 import { Helmet } from "react-helmet";
 
 const WashingMachineRepair = (props) => {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(960));
 
   return (
     <Box>
@@ -195,11 +195,10 @@ const WashingMachineRepair = (props) => {
             marginBottom: "50px",
           }}
         >
-          We are happy to provide washing machine repair services in Morris,
-          Essex, and some areas of Union County. No matter what model or brand
-          of appliance you have, our experienced team of technicians will be
-          able to quickly and efficiently identify and resolve any issues with
-          your appliance.
+          We are happy to provide washing machine repair services In Chicago and
+          surrounding areas. No matter what model or brand of appliance you
+          have, our experienced team of technicians will be able to quickly and
+          efficiently identify and resolve any issues with your appliance.
         </Typography>
       </Box>
       <Footer />

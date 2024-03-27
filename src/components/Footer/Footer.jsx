@@ -5,6 +5,9 @@ import icon from "../../assets/panda.jpg";
 
 const Footer = (props) => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isMediumScreen = useMediaQuery((theme) =>
+    theme.breakpoints.between(451, 960)
+  );
 
   return (
     <Box
@@ -38,7 +41,7 @@ const Footer = (props) => {
               width: "150px",
               borderRadius: "100px",
               marginBottom: "20px",
-              marginLeft: "90px",
+              marginLeft: isMediumScreen ? "35px" : "90px",
               marginTop: "-50px",
             }}
           />

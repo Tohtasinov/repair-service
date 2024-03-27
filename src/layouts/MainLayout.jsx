@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet";
 import Discounts from "../components/Discounts/Discounts";
 
 function MainLayout() {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(1100));
 
   return (
     <Box>

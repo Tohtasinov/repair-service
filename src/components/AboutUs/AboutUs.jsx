@@ -8,33 +8,44 @@ import about1 from "../../assets/about-1.jpg";
 import about2 from "../../assets/about-2.jpg";
 
 const AboutUs = (props) => {
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(450));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down(600)); // Изменено до 600 для планшетов
+  const isMediumScreen = useMediaQuery((theme) =>
+    theme.breakpoints.between(600, 960)
+  ); // Добавлено для планшетов
 
   return (
     <Grid
       container
       marginTop={10}
+      justifyContent="center"
+      alignItems="center"
       paddingLeft={isSmallScreen ? 0 : 19}
       flexDirection={isSmallScreen ? "column" : "row"}
     >
       <Grid
         item
-        xs={isSmallScreen ? 12 : 5}
+        xs={isSmallScreen ? 12 : isMediumScreen ? 12 : 5}
         sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
+          marginRight: isMediumScreen ? "150px" : "0",
         }}
       >
-        <Box sx={{ marginLeft: isSmallScreen ? "0" : "20px" }}>
+        <Box
+          sx={{
+            marginLeft: isSmallScreen ? 0 : isMediumScreen ? 0 : "20px",
+            marginBottom: isSmallScreen ? "20px" : 0, // Отступ снизу для планшетов
+          }}
+        >
           <Typography
             variant="h4"
             color="#111"
             style={{ fontFamily: "Ubuntu Mono", fontWeight: 600 }}
           >
-            Successful customer experiences since 1993
+            Successful customer experiences since 2018
           </Typography>
           <Typography marginTop={2} style={{ color: "grey" }}>
             "Panda Appliance Repair" offers reliable and efficient repair
@@ -52,22 +63,22 @@ const AboutUs = (props) => {
           </Button>
         </Box>
         <Box
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
-          textAlign={"center"}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          textAlign="center"
           sx={{
             gap: 5,
             marginTop: 2,
-            marginLeft: isSmallScreen ? "0" : "30px",
+            marginLeft: isSmallScreen ? 0 : "30px",
           }}
           flexDirection={isSmallScreen ? "column" : "row"}
         >
           <Box
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"center"}
-            alignItems={"center"}
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
             width={isSmallScreen ? 300 : 160}
             boxShadow={1}
             paddingTop={3}
@@ -77,10 +88,10 @@ const AboutUs = (props) => {
             <Typography variant="h6">24/7 Online Support</Typography>
           </Box>
           <Box
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"center"}
-            alignItems={"center"}
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
             width={isSmallScreen ? 300 : 160}
             boxShadow={1}
             paddingTop={3}
@@ -88,14 +99,14 @@ const AboutUs = (props) => {
           >
             <img src={target} alt="target" width={45} height={45} />
             <Typography variant="h6">
-              More then 9 Years Of Experience
+              More then 7 Years Of Experience
             </Typography>
           </Box>
           <Box
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"center"}
-            alignItems={"center"}
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
             width={isSmallScreen ? 300 : 160}
             boxShadow={1}
             paddingTop={3}
@@ -106,15 +117,21 @@ const AboutUs = (props) => {
           </Box>
         </Box>
       </Grid>
-      <Grid item xs={isSmallScreen ? 12 : 5} marginTop={10}>
+      <Grid
+        item
+        xs={isSmallScreen ? 12 : isMediumScreen ? 12 : 5}
+        marginTop={isSmallScreen ? 5 : 10}
+        sx={{ marginTop: isMediumScreen ? "150px" : "0" }}
+        marginRight={isMediumScreen ? 25 : 0}
+      >
         <Box marginLeft={isSmallScreen ? 0 : 10}>
           <img
             src={about1}
             alt="about"
-            width={445}
+            width={isSmallScreen ? "100%" : 445}
             style={{
-              marginLeft: isSmallScreen ? "0" : "90px",
-              display: isSmallScreen ? "none" : "flex",
+              marginLeft: isSmallScreen ? 0 : isMediumScreen ? 0 : "90px",
+              display: isSmallScreen ? "flex" : "none",
             }}
           />
           <img
@@ -122,7 +139,7 @@ const AboutUs = (props) => {
             alt="about"
             width={isSmallScreen ? "100%" : 445}
             style={{
-              marginTop: isSmallScreen ? "0" : "-100px",
+              marginTop: isSmallScreen ? 0 : "-100px",
             }}
           />
         </Box>
