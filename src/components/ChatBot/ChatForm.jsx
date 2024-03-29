@@ -23,7 +23,7 @@ const ChatForm = ({ onClose }) => {
 
   const handleSubmit = async () => {
     try {
-      const apiUrl = "https://198.54.125.88:443/api/sendEmail/send";
+      const apiUrl = "https://pandaappliancerepair.com/api/sendEmail";
 
       const formData = {
         username,
